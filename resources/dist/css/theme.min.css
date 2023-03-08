@@ -7108,6 +7108,8 @@ span.value {
     .edit-layout-modal .modal-dialog {
         max-width: 50%
     }
+
+
 }
 
 .edit-layout-modal.fade .modal-dialog {
@@ -7344,7 +7346,7 @@ p {
     background-color: #fff;
     z-index: 1030;
     position: relative;
-    padding: 15px 0;
+    /*padding: 15px 0;*/
     position: fixed;
     top: 0;
     width: 100%;
@@ -7352,7 +7354,7 @@ p {
    /* padding-left: 240px;*/
     -webkit-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.04), 0 1px 6px rgba(0, 0, 0, 0.04);
     -moz-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.04), 0 1px 6px rgba(0, 0, 0, 0.04);
-    box-shadow: 0 1px 15px rgba(0, 0, 0, 0.04), 0 1px 6px rgba(0, 0, 0, 0.04)
+    box-shadow:0px 0px 15px rgb(0 0 0 / 20%), 0 1px 6px rgb(0 0 0 / 4%); /*0 1px 15px rgba(0, 0, 0, 0.04), 0 1px 6px rgba(0, 0, 0, 0.04)*/
 }
 
 .wrapper .header-top .top-menu .dropdown {
@@ -7987,13 +7989,14 @@ p {
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease
+    transition: all 0.3s ease;
+
 }
 
 @media only screen and (max-width: 1023px) {
     .wrapper .page-wrap .main-content {
         padding-left: 0;
-        padding-right: 0
+        padding-right: 0;
     }
 }
 
@@ -8831,6 +8834,12 @@ hr {
   --aspect-ratio: 1; /* [2] */
   width: var(--size); /* [3] */
   height: calc(var(--size) / var(--aspect-ratio)); /* [4] */
+}
+
+
+.header-view, .display-view {
+    width: 70%;
+    margin: 0 auto;
 }
 
 .select2 {
